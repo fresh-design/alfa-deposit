@@ -48,6 +48,9 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+html {
+  font-family: Arial, Helvetica, Tahoma, Verdana, sans-serif !important;
+}
 .wrap {
   background-color: #e1e1e1;
   position: relative;
@@ -56,6 +59,8 @@ textarea {
   width: 980px;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
   border-radius: 12px;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
@@ -96,6 +101,7 @@ header span.title {
 section.choose-deposit {
   position: relative;
   min-height: 314px;
+  margin: 0 0 1em 0;
 }
 section.choose-deposit ins.pillow {
   width: 167px;
@@ -103,6 +109,7 @@ section.choose-deposit ins.pillow {
   position: absolute;
   background: url("../img/pillow.png") no-repeat;
   right: 20px;
+  top: -122px;
 }
 section.choose-deposit ins.dreaming-guy {
   background: url("../img/guy-dreaming-about-deposits.png") no-repeat;
@@ -111,6 +118,418 @@ section.choose-deposit ins.dreaming-guy {
   position: absolute;
   left: 0;
   top: -30px;
+}
+section.choose-deposit .choose-deposit-form {
+  width: 522px;
+  background-color: #df0028;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
+  border-radius: 14px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  overflow: hidden;
+  position: absolute;
+  right: 13px;
+  color: #fff;
+  z-index: 1;
+}
+section.choose-deposit .choose-deposit-form .doubt header {
+  padding: 0 20px;
+  height: 115px;
+}
+section.choose-deposit .choose-deposit-form .doubt header h2 {
+  font-weight: normal;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px 0 25px;
+}
+section.choose-deposit .choose-deposit-form .doubt header h2 strong {
+  font-weight: bold;
+}
+section.choose-deposit .choose-deposit-form .doubt header .button {
+  width: 218px;
+  height: 29px;
+  line-height: 29px;
+  position: relative;
+}
+section.choose-deposit .choose-deposit-form .doubt header .button ins {
+  display: none;
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  margin: 0 0 0 -10px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 9px 9.5px 0 9.5px;
+  border-color: #bc001f transparent transparent transparent;
+  line-height: 0px;
+  _border-color: #bc001f #000000 #000000 #000000;
+  _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+}
+section.choose-deposit .choose-deposit-form .doubt header .button.active ins {
+  display: block;
+}
+section.choose-deposit .choose-deposit-form .doubt header ul {
+  padding: 0;
+  margin: 0;
+  text-align: justify;
+}
+section.choose-deposit .choose-deposit-form .doubt header ul li {
+  padding: 0;
+  margin: 0;
+  list-style-position: outside;
+  list-style-type: none;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  zoom: 1;
+  *display: inline;
+}
+section.choose-deposit .choose-deposit-form .doubt header ul li span.or {
+  color: #940019;
+  font-size: 18px;
+  font-weight: bold;
+}
+section.choose-deposit .choose-deposit-form .doubt header ul::after {
+  width: 100%;
+  display: inline-block;
+  content: ".";
+  visibility: hidden;
+}
+section.choose-deposit .choose-deposit-form .doubt div {
+  position: relative;
+  background-color: #bc0020;
+  height: 149px;
+  -moz-box-shadow: inset 0 1px 5px rgba(21, 21, 22, 0.34);
+  -webkit-box-shadow: inset 0 1px 5px rgba(21, 21, 22, 0.34);
+  -ms-box-shadow: inset 0 1px 5px rgba(21, 21, 22, 0.34);
+  -o-box-shadow: inset 0 1px 5px rgba(21, 21, 22, 0.34);
+  box-shadow: inset 0 1px 5px rgba(21, 21, 22, 0.34);
+}
+section.choose-deposit .choose-deposit-form .doubt div ins {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 11px 11px 0 11px;
+  border-color: #df0029 transparent transparent transparent;
+  line-height: 0px;
+  _border-color: #df0029 #000000 #000000 #000000;
+  _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+  position: absolute;
+}
+section.choose-deposit .choose-deposit-form .doubt div table {
+  width: 100%;
+  border: none;
+  position: relative;
+  top: 20px;
+}
+section.choose-deposit .choose-deposit-form .doubt div table input[type="radio"] {
+  position: absolute;
+  left: -9999px;
+}
+section.choose-deposit .choose-deposit-form .doubt div table input[type="radio"] + label {
+  background: url("../img/radio-bg.png") 0 -20px no-repeat;
+  cursor: pointer;
+  display: inline-block;
+  padding-top: 2px;
+  width: 22px;
+  height: 18px;
+}
+section.choose-deposit .choose-deposit-form .doubt div table input[type="radio"]:checked + label {
+  background-position: 0 0px;
+}
+section.choose-deposit .choose-deposit-form .doubt div table tr {
+  border-bottom: 1px solid #d04d63;
+  height: 32px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+section.choose-deposit .choose-deposit-form .doubt div table tr th {
+  font-size: 11px;
+  vertical-align: bottom;
+}
+section.choose-deposit .choose-deposit-form .doubt div table tr:hover {
+  background-color: #d04d4d;
+}
+section.choose-deposit .choose-deposit-form .doubt div table thead tr:hover {
+  background-color: #bc0020;
+  cursor: default;
+}
+section.choose-deposit .choose-deposit-form .doubt div table .cur {
+  width: 70px;
+}
+section.choose-deposit .choose-deposit-form .doubt div table .term {
+  width: 100px;
+}
+section.choose-deposit .choose-deposit-form .doubt div table .choise {
+  width: 68px;
+}
+section.choose-deposit .choose-deposit-form .doubt div table .choise label {
+  position: relative;
+  top: 3px;
+  left: 2px;
+}
+section.choose-deposit .choose-deposit-form .doubt .in-the-end-of-term ins {
+  left: 117px;
+}
+section.choose-deposit .choose-deposit-form .doubt .monthly {
+  display: none;
+}
+section.choose-deposit .choose-deposit-form .doubt .monthly ins {
+  right: 117px;
+}
+section.choose-deposit .choose-deposit-form .doubt footer {
+  height: 54px;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+section.choose-deposit .choose-deposit-form .doubt footer .button.i-want {
+  width: 168px;
+  height: 39px;
+  line-height: 39px;
+  margin: 8px 0;
+  font-weight: bold;
+}
+section.choose-deposit .choose-deposit-form .form {
+  display: none;
+}
+section.choose-deposit .choose-deposit-form .form a {
+  color: #fff;
+  text-decoration: underline;
+}
+section.choose-deposit .choose-deposit-form .form header {
+  height: 54px;
+  background-color: #bc0020;
+  -moz-box-shadow: inset 0 -1px 5px rgba(21, 21, 22, 0.34);
+  -webkit-box-shadow: inset 0 -1px 5px rgba(21, 21, 22, 0.34);
+  -ms-box-shadow: inset 0 -1px 5px rgba(21, 21, 22, 0.34);
+  -o-box-shadow: inset 0 -1px 5px rgba(21, 21, 22, 0.34);
+  box-shadow: inset 0 -1px 5px rgba(21, 21, 22, 0.34);
+  padding: 12px 15px;
+  position: relative;
+}
+section.choose-deposit .choose-deposit-form .form header span {
+  font-size: 13px;
+  line-height: 1.4 !important;
+  display: block;
+}
+section.choose-deposit .choose-deposit-form .form header .change-deposit {
+  font-size: 12px;
+  position: absolute;
+  bottom: 5px;
+  right: 15px;
+  cursor: pointer;
+}
+section.choose-deposit .choose-deposit-form .form .fieldset {
+  margin: 15px 15px 0 15px ;
+  font-size: 12px;
+  position: relative;
+}
+section.choose-deposit .choose-deposit-form .form .fieldset div {
+  height: 46px;
+  margin: 0 0 5px;
+  width: 236px;
+}
+section.choose-deposit .choose-deposit-form .form .fieldset div input {
+  width: 95%;
+}
+section.choose-deposit .choose-deposit-form .form .fieldset div label {
+  display: block;
+}
+section.choose-deposit .choose-deposit-form .form .fieldset .ukr label {
+  display: inline;
+  position: relative;
+  top: 22px;
+}
+section.choose-deposit .choose-deposit-form .form .fieldset .ukr input {
+  width: auto;
+}
+section.choose-deposit .choose-deposit-form .form .fieldset .phone #code {
+  width: 45px;
+}
+section.choose-deposit .choose-deposit-form .form .fieldset .phone #num {
+  width: 165px;
+}
+section.choose-deposit .choose-deposit-form .form .fieldset .pib {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+section.choose-deposit .choose-deposit-form .form .fieldset .pib input {
+  width: 66px;
+}
+section.choose-deposit .choose-deposit-form .form .fieldset .email {
+  position: absolute;
+  right: 0;
+  top: 51px;
+}
+section.choose-deposit .choose-deposit-form .form .fieldset .sum {
+  position: absolute;
+  top: 101px;
+  right: 0;
+}
+section.choose-deposit .choose-deposit-form .form .fieldset .currency {
+  width: 100%;
+  text-align: justify;
+  height: 25px;
+  margin: 0;
+}
+section.choose-deposit .choose-deposit-form .form .fieldset .currency div {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  zoom: 1;
+  *display: inline;
+  width: auto;
+}
+section.choose-deposit .choose-deposit-form .form .fieldset .currency div label {
+  display: inline;
+}
+section.choose-deposit .choose-deposit-form .form .fieldset .currency div input {
+  width: auto;
+}
+section.choose-deposit .choose-deposit-form .form .fieldset .currency::after {
+  width: 100%;
+  display: inline-block;
+  content: ".";
+  visibility: hidden;
+}
+section.choose-deposit .choose-deposit-form .form .fieldset .i-agree {
+  width: 100%;
+  height: 25px;
+  margin: 0;
+  text-align: center;
+}
+section.choose-deposit .choose-deposit-form .form .fieldset .i-agree label {
+  display: inline;
+}
+section.choose-deposit .choose-deposit-form .form .fieldset .i-agree input {
+  width: auto;
+}
+section.choose-deposit .choose-deposit-form .form .fieldset input {
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  border: none;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #fff;
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.53);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.53);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.53);
+  height: 16px;
+  padding: 5px;
+}
+section.choose-deposit .choose-deposit-form .form .fieldset input[type="radio"] {
+  position: absolute;
+  left: -9999px;
+}
+section.choose-deposit .choose-deposit-form .form .fieldset input[type="radio"] + label {
+  background: url("../img/radio-bg1.png") 0 0px no-repeat;
+  cursor: pointer;
+  display: inline-block;
+  padding-left: 20px;
+}
+section.choose-deposit .choose-deposit-form .form .fieldset input[type="radio"]:checked + label {
+  background-position: 0 -24px;
+}
+section.choose-deposit .choose-deposit-form .form .fieldset input[type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+}
+section.choose-deposit .choose-deposit-form .form .fieldset input[type="checkbox"] + label {
+  background: url("../img/cb-bg.png") 0 0px no-repeat;
+  cursor: pointer;
+  display: inline-block;
+  padding-left: 20px;
+}
+section.choose-deposit .choose-deposit-form .form .fieldset input[type="checkbox"]:checked + label {
+  background-position: 0 -24px;
+}
+section.choose-deposit .choose-deposit-form .form footer {
+  height: 54px;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+section.choose-deposit .choose-deposit-form .form footer .button {
+  width: 168px;
+  height: 39px;
+  line-height: 39px;
+  margin: 8px 0;
+  font-weight: bold;
+}
+.button {
+  color: #212121;
+  font-size: 16px;
+  text-shadow: 0 1px 0 #fff;
+  cursor: pointer;
+  position: relative;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *display: inline;
+  text-align: center;
+  text-decoration: none;
+  -ms-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  border: none;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #fff;
+  -ms-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.47);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.47);
+  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.13) 0%, rgba(255, 255, 255, 0.13) 100%);
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.13) 0%, rgba(255, 255, 255, 0.13) 100%);
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.13) 0%, rgba(255, 255, 255, 0.13) 100%);
+  background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.13) 0%, rgba(255, 255, 255, 0.13) 100%);
+  background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0.13) 0%, rgba(255, 255, 255, 0.13) 100%);
+  zoom: 1;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+}
+.button.active,
+.button.active:hover,
+.button.active:active {
+  color: #ff002d;
+  font-size: 16px;
+  text-shadow: 0 1px 0 #fff;
+}
+.button:hover {
+  color: #bc0020;
+  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.13) 20%, rgba(255, 255, 255, 0.13) 100%);
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.13) 20%, rgba(255, 255, 255, 0.13) 100%);
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.13) 20%, rgba(255, 255, 255, 0.13) 100%);
+  background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.13) 20%, rgba(255, 255, 255, 0.13) 100%);
+  background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0.13) 20%, rgba(255, 255, 255, 0.13) 100%);
+  zoom: 1;
+}
+.button:active {
+  background-image: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0.13) 0%, rgba(0, 0, 0, 0.13) 50%);
+  background-image: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.13) 0%, rgba(0, 0, 0, 0.13) 50%);
+  background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.13) 0%, rgba(0, 0, 0, 0.13) 50%);
+  background-image: linear-gradient(bottom, rgba(255, 255, 255, 0.13) 0%, rgba(0, 0, 0, 0.13) 50%);
+  background-image: -ms-linear-gradient(bottom, rgba(255, 255, 255, 0.13) 0%, rgba(0, 0, 0, 0.13) 50%);
+  zoom: 1;
+  -ms-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.47);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.47);
 }
 section.features {
   background: url("../img/bottom-bg.png") repeat-x top;
@@ -129,6 +548,9 @@ section.features {
 section.features h2 {
   color: #df0028;
   font-size: 18px;
+}
+section.features a {
+  color: #df0028;
 }
 section.features ul {
   padding: 0;
@@ -291,7 +713,7 @@ div.arrow .barr {
 }
 footer {
   width: 980px;
-  margin: 0 auto;
+  margin: 0 auto 1em;
   position: relative;
   line-height: 17px !important;
   color: #212121;
@@ -320,6 +742,13 @@ footer .copyright {
 }
 ins {
   display: block;
+}
+.unselect {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
 }
 .inline-block {
   display: -moz-inline-stack;

@@ -60,7 +60,9 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-html, body {}
+html {
+    font-family: Arial, Helvetica, Tahoma, Verdana, sans-serif !important;
+}
 
 .wrap {
     background-color: #e1e1e1;
@@ -111,6 +113,7 @@ header {
 section.choose-deposit {
     position: relative;
     min-height: 314px;
+    margin: 0 0 1em 0;
 
     ins.pillow {
         width:167px;
@@ -118,6 +121,7 @@ section.choose-deposit {
         position: absolute;
         background:url("../img/pillow.png") no-repeat;
         right:20px;
+        top:-122px;
     }
 
     ins.dreaming-guy {
@@ -128,7 +132,448 @@ section.choose-deposit {
         left:0;
         top:-30px;
     }
+
+    .choose-deposit-form {
+        width:522px;
+        background-color: #df0028;
+        .border-radius(14px);
+        overflow: hidden;
+        position: absolute;
+        right:13px;
+        color: #fff;
+        z-index: 1;
+
+        .doubt {
+            header {
+                padding: 0 20px;
+                height: 115px;
+                h2 {
+                    font-weight: normal;
+                    font-size: 20px;
+                    text-align: center;
+                    margin: 20px 0 25px;
+                    strong {
+                        font-weight: bold;
+                    }
+                }
+
+                .button {
+                    width: 218px;
+                    height: 29px;
+                    line-height: 29px;
+                    position: relative;
+
+                    ins {
+                        display: none;
+                        position: absolute;
+                        left:50%;
+                        bottom:-10px;
+                        margin: 0 0 0 -10px;
+                        width: 0px;
+                        height: 0px;
+                        border-style: solid;
+                        border-width: 9px 9.5px 0 9.5px;
+                        border-color: #bc001f transparent transparent transparent;
+                        line-height: 0px;
+                        _border-color: #bc001f #000000 #000000 #000000;
+                        _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+                    }
+                }
+                .button.active {
+                    ins {
+                        display: block;
+                    }
+                }
+
+                ul {
+                    padding: 0;
+                    margin: 0;
+                    text-align: justify;
+                    
+                    li {
+                        padding: 0;
+                        margin: 0;
+                        list-style-position: outside;
+                        list-style-type: none;
+                        .inline-block();    
+                        a {}
+
+                        span.or {
+                            color: #940019;
+                            font-size: 18px;
+                            font-weight: bold;
+                        }
+                    }
+                }
+                ul::after {width: 100%; display: inline-block; content: "."; visibility: hidden}
+
+            }
+            div {
+                position: relative;
+
+                background-color: #bc0020;
+                height: 149px;
+                -moz-box-shadow: inset 0 1px 5px rgba(21,21,22,.34);
+                -webkit-box-shadow: inset 0 1px 5px rgba(21,21,22,.34);
+                -ms-box-shadow: inset 0 1px 5px rgba(21,21,22,.34);
+                -o-box-shadow: inset 0 1px 5px rgba(21,21,22,.34);
+                box-shadow: inset 0 1px 5px rgba(21,21,22,.34);
+
+                ins {
+                    width: 0px;
+                    height: 0px;
+                    border-style: solid;
+                    border-width: 11px 11px 0 11px;
+                    border-color: #df0029 transparent transparent transparent;
+                    line-height: 0px;
+                    _border-color: #df0029 #000000 #000000 #000000;
+                    _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+                    position: absolute;
+                }
+
+                table {
+                    width: 100%;
+                    border:none;
+                    position: relative;
+                    top:20px;
+
+
+                    input[type="radio"] {
+                        position: absolute;
+                        left: -9999px;
+                    }
+                     
+                    input[type="radio"] + label {
+                        background: url("../img/radio-bg.png") 0 -20px no-repeat;
+                        cursor: pointer;
+                        display: inline-block;
+                        padding-top: 2px;
+                        width:22px;
+                        height: 18px;
+                    }
+                     
+                    input[type="radio"]:checked + label {
+                        background-position: 0 0px;
+                    }
+
+                    tr {
+                        border-bottom:1px solid #d04d63;
+                        height: 32px;
+                        font-size: 16px;
+                        text-align: center;
+                        cursor:pointer;
+
+                        th {
+                            font-size: 11px;
+                            vertical-align: bottom;
+                        }
+                    }
+                    tr:hover {
+                        background-color: #d04d4d;
+                    }
+
+                    thead tr:hover {
+                        background-color: #bc0020;
+                        cursor: default;
+                    }
+
+                    .cur {
+                        width:70px;
+                    }
+                    .term {
+                        width: 100px;
+                    }
+                    .comfort-period {}
+                    .choise {
+                        width:68px;
+                        label {
+                            position: relative;
+                            top:3px;
+                            left:2px;
+                        }
+                    }
+                }
+            }
+            .in-the-end-of-term {
+                ins {
+                    left:117px;
+
+                }
+            }
+            .monthly {
+                ins {
+                    right:117px;
+                }
+                display:none;
+            }
+
+            footer {
+                height: 54px;
+                text-align: center;
+                width: 100%;
+                margin: 0;
+
+                .button.i-want {
+                    width: 168px;
+                    height: 39px;
+                    line-height: 39px;
+                    margin: 8px 0;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .form {
+            display: none;
+
+            a {
+                color: #fff;
+                text-decoration: underline;
+            }
+
+            header {
+                height: 54px;
+                background-color: #bc0020;
+                -moz-box-shadow: inset 0 -1px 5px rgba(21,21,22,.34);
+                -webkit-box-shadow: inset 0 -1px 5px rgba(21,21,22,.34);
+                -ms-box-shadow: inset 0 -1px 5px rgba(21,21,22,.34);
+                -o-box-shadow: inset 0 -1px 5px rgba(21,21,22,.34);
+                box-shadow: inset 0 -1px 5px rgba(21,21,22,.34);
+
+                padding: 12px 15px;
+                position: relative;
+
+                span {
+                    font-size: 13px;
+                    line-height: 1.4 !important;
+                    display: block;
+                }
+
+                .change-deposit {
+                    font-size: 12px;
+                    position: absolute;
+                    bottom:5px;
+                    right:15px;
+                    cursor: pointer;
+                }
+            }
+            .fieldset {
+                margin: 15px 15px 0 15px ;
+                font-size: 12px;
+
+                position: relative;
+
+                div {
+                    height: 46px;
+                    margin: 0 0 5px;
+                    width:236px;
+                    input {
+                        width:100% - 5px;
+                    }
+                    label {
+                        display: block;
+                    }
+                }
+
+                .ukr {
+                    label {
+                        display: inline;
+                        position: relative;
+                        top:22px;
+                    }
+                    input {
+                        width: auto;
+                    }
+                }
+                .phone {
+                    #code {
+                        width:45px;
+                    }
+                    #num {
+                        width:165px;
+                    }
+                }
+                .id {}
+                .pib {
+                    input {
+                        width:66px;
+                    }
+                    position:absolute;
+                    top:0;
+                    right:0;
+                }
+                .email {
+                    position:absolute;
+                    right:0;
+                    top:51px;
+                }
+                .sum {
+                    position:absolute;
+                    top:101px;
+                    right:0;
+                }
+                .currency {
+                    width: 100%;
+                    text-align: justify;
+                    height:25px;
+                    margin: 0;
+                    div {
+                        .inline-block();
+                        width: auto;
+                        label{
+                            display: inline;
+                        }
+                        input {
+                            width: auto;
+                        }
+                    }
+                }
+                .currency::after {width: 100%; display: inline-block; content: "."; visibility: hidden}
+                .i-agree {
+                    width: 100%;
+                    height:25px;
+                    margin: 0;
+                    label {
+                        display: inline;
+                    }
+                    input {
+                        width:auto;
+                    }
+                    text-align: center;
+                }
+
+
+
+                input {
+                    -moz-border-radius: 8px;
+                    -webkit-border-radius: 8px;
+                    border-radius: 8px;
+                    border: none;
+                    -moz-background-clip: padding;
+                    -webkit-background-clip: padding-box;
+                    background-clip: padding-box;
+                    background-color: #fff;
+                    -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.53);
+                    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.53);
+                    box-shadow: inset 0 1px 2px rgba(0,0,0,.53);
+                    height: 16px;
+                    padding: 5px;
+                }
+
+                input[type="radio"] {
+                    position: absolute;
+                    left: -9999px;
+                }
+                 
+                input[type="radio"] + label {
+                    background: url("../img/radio-bg1.png") 0 0px no-repeat;
+                    cursor: pointer;
+                    display: inline-block;
+                    padding-left: 20px;
+                }
+                 
+                input[type="radio"]:checked + label {
+                    background-position: 0 -24px;
+                }
+
+                input[type="checkbox"] {
+                    position: absolute;
+                    left: -9999px;
+                }
+                 
+                input[type="checkbox"] + label {
+                    background: url("../img/cb-bg.png") 0 0px no-repeat;
+                    cursor: pointer;
+                    display: inline-block;
+                    padding-left: 20px;
+                }
+                 
+                input[type="checkbox"]:checked + label {
+                    background-position: 0 -24px;
+                }
+
+            }
+            footer {
+                height: 54px;
+                text-align: center;
+                width: 100%;
+                margin: 0;
+
+                .button {
+                    width: 168px;
+                    height: 39px;
+                    line-height: 39px;
+                    margin: 8px 0;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
 }
+
+.button {
+    color: #212121;
+    font-size: 16px;
+    text-shadow: 0 1px 0 #fff;
+    cursor:pointer;
+    position: relative;
+
+    .inline-block();
+    text-align: center;
+    text-decoration: none;
+    -ms-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    border:none;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background-color: #fff;
+    -ms-box-shadow: 0 1px 2px rgba(0,0,0,.47);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.47);
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.47);
+    box-shadow: 0 1px 2px rgba(0,0,0,.47);
+    background-image: -moz-linear-gradient(bottom, rgba(0,0,0,.13) 0%, rgba(255,255,255,.13) 100%);
+    background-image: -o-linear-gradient(bottom, rgba(0,0,0,.13) 0%, rgba(255,255,255,.13) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,.13) 0%, rgba(255,255,255,.13) 100%);
+    background-image: linear-gradient(bottom, rgba(0,0,0,.13) 0%, rgba(255,255,255,.13) 100%);
+    background-image: -ms-linear-gradient(bottom, rgba(0,0,0,.13) 0%, rgba(255,255,255,.13) 100%);
+    zoom: 1;
+    .unselect();
+}
+.button.active,
+.button.active:hover,
+.button.active:active {
+    color: #ff002d;
+    font-size: 16px;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.button:hover {
+    color: #bc0020;
+    background-image: -moz-linear-gradient(bottom, rgba(0,0,0,.13) 20%, rgba(255,255,255,.13) 100%);
+    background-image: -o-linear-gradient(bottom, rgba(0,0,0,.13) 20%, rgba(255,255,255,.13) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,.13) 20%, rgba(255,255,255,.13) 100%);
+    background-image: linear-gradient(bottom, rgba(0,0,0,.13) 20%, rgba(255,255,255,.13) 100%);
+    background-image: -ms-linear-gradient(bottom, rgba(0,0,0,.13) 20%, rgba(255,255,255,.13) 100%);
+    zoom: 1;
+}
+.button:active {
+    background-image: -moz-linear-gradient(bottom, rgba(255,255,255,.13) 0%, rgba(0,0,0,.13) 50%);
+    background-image: -o-linear-gradient(bottom, rgba(255,255,255,.13) 0%, rgba(0,0,0,.13) 50%);
+    background-image: -webkit-linear-gradient(bottom, rgba(255,255,255,.13) 0%, rgba(0,0,0,.13) 50%);
+    background-image: linear-gradient(bottom, rgba(255,255,255,.13) 0%, rgba(0,0,0,.13) 50%);
+    background-image: -ms-linear-gradient(bottom, rgba(255,255,255,.13) 0%, rgba(0,0,0,.13) 50%);
+    zoom: 1;
+    -ms-box-shadow: inset 0 1px 2px rgba(0,0,0,.47);
+    -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.47);
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.47);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.47);
+}
+
+
+
 section.features {
     background: url("../img/bottom-bg.png") repeat-x top;
     position: relative;
@@ -147,6 +592,10 @@ section.features {
         color: #df0028;
         font-size: 18px;
 
+    }
+
+    a {
+        color:#df0028;
     }
 
     ul {
@@ -317,7 +766,7 @@ div.arrow {
 
 footer {
     width: 980px;
-    margin: 0 auto;
+    margin: 0 auto 1em;
     position: relative;
     line-height: 17px !important;
 
@@ -355,12 +804,20 @@ ins {
 
 
 
-
+.unselect {
+     user-select: none;
+     -moz-user-select: none;
+     -webkit-user-select: none;
+     -ms-user-select: none;
+     -o-user-select: none;
+}
 
 
 .border-radius (@radius: 5px) {
     -webkit-border-radius: @radius;
     -moz-border-radius:    @radius;
+    -ms-border-radius:     @radius;
+    -o-border-radius:      @radius;
     border-radius:         @radius;
 
     -moz-background-clip:    padding;
