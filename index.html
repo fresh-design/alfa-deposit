@@ -175,45 +175,66 @@
                                     та періодом комфортного розміщення вкладу 3М,<br>
                                     UAH 14,25%, USD 5.00%, EUR 4,50%
                                 </span>
-                                <a class="change-deposit">Змінити депозит</a>
+                                <a class="change-deposit">Змінити умови</a>
                             </header>
                             <div class="fieldset">
-                                <div class="ukr">
-                                    <input type="checkbox" id="ukr" name="ukr">
-                                    <label for="ukr">Я громадянин України</label>
+                                <div class="col1">
+                                    <div class="ukr">
+                                        <input type="checkbox" id="ukr" name="ukr">
+                                        <label for="ukr">Я громадянин України</label>
+                                    </div>
+                                    <div class="phone">
+                                        <label for="phone_code">
+                                            Контактний телефон
+                                        </label>
+                                        <select name="" id="phone_code" class="phone_code">
+                                            <option value="">...</option>
+                                            <option value="">039</option>
+                                            <option value="">050</option>
+                                            <option value="">063</option>
+                                            <option value="">066</option>
+                                            <option value="">067</option>
+                                            <option value="">068</option>
+                                            <option value="">091</option>
+                                            <option value="">092</option>
+                                            <option value="">093</option>
+                                            <option value="">094</option>
+                                            <option value="">095</option>
+                                            <option value="">096</option>
+                                            <option value="">097</option>
+                                            <option value="">098</option>
+                                            <option value="">099</option>
+                                        </select>
+                                        <input type="text" id="num" name="num">
+                                    </div>
+                                    <div class="id">
+                                        <label for="id">
+                                            Iдентифiкацiйний номер
+                                        </label>
+                                        <input type="text" name="id" id="id">
+                                    </div>
                                 </div>
-                                <div class="phone">
-                                    <label for="code">
-                                        Контактний телефон
-                                    </label>
-                                    <input type="text" id="code" name="code">
-                                    <input type="text" id="num" name="num">
-                                </div>
-                                <div class="id">
-                                    <label for="id">
-                                        Iдентифiкацiйний номер
-                                    </label>
-                                    <input type="text" name="id" id="id">
-                                </div>
-                                <div class="pib">
-                                    <label for="surname">
-                                        ПІБ
-                                    </label>
-                                    <input type="text" name="surname" id="surname">
-                                    <input type="text" name="name" id="name">
-                                    <input type="text" name="midname" id="midname">
-                                </div>
-                                <div class="email">
-                                    <label for="email">
-                                        Електронна пошта
-                                    </label>
-                                    <input type="email" name="email" id="email">
-                                </div>
-                                <div class="sum">
-                                    <label for="sum">
-                                        Сума вкладу
-                                    </label>
-                                    <input type="text" name="sum" id="sum">
+                                <div class="col2">
+                                    <div class="pib">
+                                        <label for="surname">
+                                            ПІБ
+                                        </label>
+                                        <input type="text" name="surname" id="surname">
+                                        <input type="text" name="name" id="name">
+                                        <input type="text" name="midname" id="midname">
+                                    </div>
+                                    <div class="email">
+                                        <label for="email">
+                                            Електронна пошта
+                                        </label>
+                                        <input type="email" name="email" id="email">
+                                    </div>
+                                    <div class="sum">
+                                        <label for="sum">
+                                            Сума вкладу
+                                        </label>
+                                        <input type="text" name="sum" id="sum">
+                                    </div>
                                 </div>
                                 <div class="currency">
                                     <div>
@@ -231,7 +252,7 @@
                                 </div>
                                 <div class="i-agree">
                                     <input type="checkbox" id="agree" name="agree">
-                                    <label for="agree">Я погоджуюсь з <a href="" target="blank">умовами оформлення</a> онлайн-заявки</label>
+                                    <label for="agree">Я погоджуюсь з <a class="terms">умовами оформлення</a> онлайн-заявки</label>
                                 </div>
                             </div>
                             <footer>
@@ -239,6 +260,20 @@
                                     Надіслати
                                 </button>
                             </footer>
+                        </div>
+                        <div class="last-step">
+                            <img src="img/mail.png" class="mail">
+                            <p>
+                                На указанный вами номер телефона был отправлен код 
+                                подтверждения, который необходимо указать в поле ниже:
+                            </p>
+                            <div>
+                                <label for="security_code">Код подтверждения</label>
+                                <input type="text" value="fg54xgx54gv5">
+                            </div>
+                            <a href="" class="button">
+                                Продолжить
+                            </a>
                         </div>
                     </form>
                 </div>
@@ -255,12 +290,12 @@
                     <li class="internet-banking">
                         <ins></ins>
                         <span>
-                            Безкоштовне підключення і&nbsp;керування своїми коштами через <a href="" target="_blank">Інтернет-банкінг «My Alfa-Bank»</a>
+                            Безкоштовне підключення і&nbsp;керування своїми коштами через <a href="http://www.alfabank.com.ua/retail/mab" target="_blank">Інтернет-банкінг «My Alfa-Bank»</a>
                         </span>
                     </li>
                     <li class="piggy">
                         <ins></ins>
-                        <span>Рахунок <a href="">«Дохідний сейф»</a>  до&nbsp;карти вкладника, який допоможе Вам зберегти і&nbsp;примножити свої заощадження</span>
+                        <span>Рахунок <a href="http://alfabank.com.ua/ukr/retail/alfa-style/safe">«Дохідний сейф»</a>  до&nbsp;карти вкладника, який допоможе Вам зберегти і&nbsp;примножити свої заощадження</span>
                     </li>
                     <li class="free">
                         <ins></ins>
@@ -327,10 +362,33 @@
                 © 2009 ПАО «Альфа-Банк» (Украина)
             </div>
         </footer>
+
+        <div class="popup">
+            <div class="popup-block">
+                <header>
+                    <h4>Условия оформления онлайн-заявки</h4>
+                    <ins class="close-popup">×</ins>
+                </header>
+                <div class="overview" style="top: 0px;">
+                    <p>Заполняя данную анкету, клиент подтверждает факт того, что предоставленная им информация является полной и достоверной и соглашается, что банк имеет право обрабатывать его персональные данные и проверять информацию, указанную в данной анкете, и проводить такие проверки, которые банк считает необходимыми. В частности, клиент уполномочивает банк связываться в удобное для банка время с работодателем клиента для проверки и получения любой необходимой информации. </p>
+                    <p>Клиент выражает свое согласие на передачу банком в Бюро кредитных историй сведений, предоставленных им в данной анкете, его обязательств по кредитному договору и другой информации (включая персональные данные и сведения, содержащие банковскую тайну, предоставленные в анкете-заявке на получение кредита, а также документов, предоставленных для получения кредита), предусмотренной Законом Украины "Об организации формирования и обращения кредитных историй" № 2704-IV от 23 июня 2009 года. </p>
+                    <p>Клиент соглашается на получение банком информации о кредитной истории клиента в Бюро кредитных историй, обработку, использование и передачу третьим лицам банком персональных данных клиента в соответствии с Законом Украины "Об организации формирования и обращения кредитных историй" № 2704-IV от 23 июня 2009 года. </p>
+                    <p>Клиент подтверждает, что ему известны его права, определенные Законом Украины "О защите персональных данных", и лица, которым его данные передаются. </p>
+                    <p>Клиент подтверждает, что предоставленное им согласие на обработку его персональных данных не требует осуществления банком сообщений о передаче его персональных данных третьим лицам в соответствии с нормами ст.21 Закона Украины "О защите персональных данных". </p>
+                    <p>В случае отказа банка в выдаче кредита клиент дает согласие сроком на 5 лет на обработку и использование его персональных данных в целях информирования о новых кредитных продуктах и банковских услугах, предоставляемых банком. </p>
+                    <p>Банк будет обрабатывать следующие персональные данные клиента: фамилия, имя, отчество, год, месяц, число и место рождения, адрес регистрации (проживания), семейное, социальное и имущественное положение, образование, профессия, доходы, № документа, удостоверяющего личность, дата, орган, его выдавший, ИНН клиента и любая другая информация о клиенте, ставшая доступной или известной банку в конкретный момент времени. </p>                       
+                </div>
+            </div>
+        </div>
         
 
         <script src="js/vendor/jquery-1.10.1.min.js"></script> 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('select.phone_code').customSelect();
+            });
+        </script>
     </body>
 </html>

@@ -142,6 +142,7 @@ section.choose-deposit {
         right:13px;
         color: #fff;
         z-index: 1;
+        min-height: 20px;
 
         .doubt {
             header {
@@ -158,10 +159,11 @@ section.choose-deposit {
                 }
 
                 .button {
-                    width: 218px;
+                    width: 215px;
                     height: 29px;
                     line-height: 29px;
                     position: relative;
+                    font-weight: bold;
 
                     ins {
                         display: none;
@@ -187,7 +189,7 @@ section.choose-deposit {
 
                 ul {
                     padding: 0;
-                    margin: 0;
+                    margin: 0 auto;
                     text-align: justify;
                     
                     li {
@@ -202,6 +204,7 @@ section.choose-deposit {
                             color: #940019;
                             font-size: 18px;
                             font-weight: bold;
+                            padding: 0 5px;
                         }
                     }
                 }
@@ -257,7 +260,6 @@ section.choose-deposit {
                     }
 
                     tr {
-                        border-bottom:1px solid #d04d63;
                         height: 32px;
                         font-size: 16px;
                         text-align: center;
@@ -266,6 +268,9 @@ section.choose-deposit {
                         th {
                             font-size: 11px;
                             vertical-align: bottom;
+                        }
+                        th,td {
+                            border-bottom:1px solid #d04d63 !important;
                         }
                     }
                     tr:hover {
@@ -363,55 +368,80 @@ section.choose-deposit {
 
                 position: relative;
 
-                div {
-                    height: 46px;
-                    margin: 0 0 5px;
-                    width:236px;
-                    input {
-                        width:100% - 5px;
-                    }
-                    label {
-                        display: block;
+                
+
+                .col1, .col2 {
+                    div {
+                        height: 46px;
+                        margin: 0 0 5px;
+
+                        
+                        label {
+                            display: block;
+                        }
+
+                        input {
+                            width:100% - 1px;
+                        }
                     }
                 }
 
-                .ukr {
-                    label {
-                        display: inline;
+                .col1 {
+                    div {
+                        width:160px;
+                    }
+
+                    .ukr {
+                        label {
+                            display: inline;
+                            position: relative;
+                            top:22px;
+                        }
+                        input {
+                            width: auto;
+                        }
+                    }
+                    .phone {
                         position: relative;
-                        top:22px;
+                        #phone_code {
+                            width:40px;
+                            float: left;
+                            margin: 0 5px 0 0;
+                        }
+                        #num {
+                            width:107px;
+                            margin: 0 0 0 5px
+                        }
                     }
-                    input {
-                        width: auto;
+                    .id {}
+                }
+                .col2 {
+                    div {
+                        width: 315px;
+                    }
+
+                    .pib {
+                        input {
+                            width:99px;
+                        }
+                        position:absolute;
+                        top:0;
+                        right:0;
+                    }
+                    .email {
+                        position:absolute;
+                        right:0;
+                        top:51px;
+                    }
+                    .sum {
+                        position:absolute;
+                        top:101px;
+                        right:0;
                     }
                 }
-                .phone {
-                    #code {
-                        width:45px;
-                    }
-                    #num {
-                        width:165px;
-                    }
-                }
-                .id {}
-                .pib {
-                    input {
-                        width:66px;
-                    }
-                    position:absolute;
-                    top:0;
-                    right:0;
-                }
-                .email {
-                    position:absolute;
-                    right:0;
-                    top:51px;
-                }
-                .sum {
-                    position:absolute;
-                    top:101px;
-                    right:0;
-                }
+
+                
+                
                 .currency {
                     width: 100%;
                     text-align: justify;
@@ -444,21 +474,7 @@ section.choose-deposit {
 
 
 
-                input {
-                    -moz-border-radius: 8px;
-                    -webkit-border-radius: 8px;
-                    border-radius: 8px;
-                    border: none;
-                    -moz-background-clip: padding;
-                    -webkit-background-clip: padding-box;
-                    background-clip: padding-box;
-                    background-color: #fff;
-                    -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.53);
-                    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.53);
-                    box-shadow: inset 0 1px 2px rgba(0,0,0,.53);
-                    height: 16px;
-                    padding: 5px;
-                }
+                
 
                 input[type="radio"] {
                     position: absolute;
@@ -492,6 +508,97 @@ section.choose-deposit {
                     background-position: 0 -24px;
                 }
 
+                .select_wrap {
+                    float: left;
+                    -moz-border-radius: 8px;
+                    -webkit-border-radius: 8px;
+                    border-radius: 8px;
+                    border: none;
+                    -moz-background-clip: padding;
+                    -webkit-background-clip: padding-box;
+                    background-clip: padding-box;
+                    background-color: #fff;
+                    -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.53);
+                    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.53);
+                    box-shadow: inset 0 1px 2px rgba(0,0,0,.53);
+                    
+                    padding: 3px 2px ;
+                    width:40px !important;
+                    height:20px !important;
+                    color:#000 !important;
+                    .select_emul {
+                        cursor:pointer;
+                        position: relative;
+                            width:40px !important;
+                            height:20px;
+                            margin: -5px 0 0 0;
+                        .select_selected.none {
+                            background: #e4a28b;
+                        }
+                        .select_selected {
+                            position: relative;
+                            width: 30px;
+                            height: 18px;
+                            line-height: 24px;
+                            padding: 0 2px;
+                            margin: 4px 0 0 0;
+
+                            .selected_text {
+                                height: 20px;
+                                width: 30px;
+                            }
+                            .select_arrow {
+                                width:10px;
+                                height: 18px;
+                                position: absolute;
+                                right: -2px;
+                                top:3px;
+
+                                ins {
+                                    width: 0px;
+                                    height: 0px;
+                                    border-style: solid;
+                                    border-width: 6px 5px 0 5px;
+                                    border-color: #c2c2c2 transparent transparent;
+                                    left: 0px;
+                                    position: absolute;
+                                    top: 6px;
+                                }
+                            }
+                        }
+                        .select_options {
+                            width: 45px;
+                            margin: -7px 0 0 -2px;
+                            display:none;
+                            position: absolute;
+                            height: 150px;
+                            overflow-y:scroll;
+                            overflow-x:hidden;
+                            top:27px;
+                            z-index:5;
+                            .select_option {
+                                position: relative;
+                                width: 25px;
+                                height: 24px;
+                                line-height: 24px;
+                                padding: 0 2px;
+                                background: #fff;
+                                margin: 0;
+                            }
+                            .select_option:hover {
+                                background: #eee
+                            }
+                        }
+                    }
+                    .select_emul:hover {
+                        .select_options {
+                        }
+                    }
+                    select {
+                        display:none;
+                    }
+                }
+
             }
             footer {
                 height: 54px;
@@ -508,8 +615,61 @@ section.choose-deposit {
                 }
             }
         }
+
+        .last-step {
+            display: none;
+            height: 320px;
+
+            .mail {
+                display: block;
+                margin: 25px auto;
+            }
+            p {
+                margin: 0 55px;
+                font-size: 14px;
+            }
+
+            div {
+                margin: 15px 55px;
+
+                label {
+                    font-size: 12px;
+                    display: block;
+                }
+                input {
+                    margin: 5px 0;
+                    width:110px;
+                }
+            }
+            .button {
+                width:168px;
+                height: 39px;
+                line-height: 39px;
+                font-weight: bold;
+                margin: 0 auto;
+                display: block;
+            }
+        }
     }
 }
+
+input {
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    border: none;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background-color: #fff;
+    -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.53);
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.53);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.53);
+    height: 16px;
+    padding: 5px 2px;
+}
+
+
 
 .button {
     color: #212121;
@@ -800,6 +960,62 @@ ins {
 }
 
 
+.popup {
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom:0;
+    left:0;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 1000;
+    display: none;
+
+    .popup-block {
+        width:600px;
+        margin: 0 auto;
+        background: #fff;
+        top:20%;
+        height:500px;
+        position: absolute;
+        left:50%;
+        margin: 0 0 0 -300px;
+
+        header {
+            height: 50px;
+            margin: 0;
+            padding:0 15px;
+
+            .close-popup {
+                text-decoration: none;
+                font-size: 200%;
+                position: absolute;
+                top:-5px;
+                right:20px;
+                cursor:pointer;
+                border: 2px solid #666;
+                width:24px;
+                height: 24px;
+                line-height: 24px;
+                text-align: center;
+                -webkit-border-radius: 100px;
+                -moz-border-radius: 100px;
+                border-radius: 100px;
+            }
+        }
+
+        .overview {
+            overflow-y: scroll;
+            padding:0 15px;
+            height: 427px;
+            width:570px;
+            font-size: 80%;
+            p {
+                text-align: justify;
+            }
+        }
+    }
+}
+
 
 
 
@@ -834,6 +1050,17 @@ ins {
     *display: inline;
 }
 
+
+
+.r-radio {
+    background: url("../img/radio-bg.png") 0 -20px no-repeat;
+    cursor: pointer;
+    display: inline-block;
+    padding-top: 2px;
+    width:22px;
+    height: 18px;
+}
+.r-selected {background-position: 0 0px;}
 
 /* ==========================================================================
    Media Queries
@@ -910,4 +1137,119 @@ ins {
 
 .clearfix {
     *zoom: 1;
+}
+
+
+
+
+/* */
+
+.lt-ie9 {
+    input[type="radio"] {
+        position: relative !important;
+        left:0 !important;
+        background: none !important;
+    }
+     
+    input[type="radio"] + label {
+        background: none !important;
+        cursor: pointer;
+        display: inline-block;
+    }
+     
+    input[type="radio"]:checked + label {
+    }
+
+    input[type="checkbox"] {
+        position: relative !important;
+        left:0 !important;
+        background: none !important;
+    }
+     
+    input[type="checkbox"] + label {
+        background: none !important;
+        cursor: pointer;
+        display: inline-block;
+    }
+     
+    input[type="checkbox"]:checked + label {
+    }
+
+    td.choise {
+        text-align: center;
+
+        input {
+            position: relative;
+            margin: 0 0 0 25px;
+        }
+    }
+
+    .ukr {
+        position: relative;
+        top:20px;
+    }
+
+    .select_wrap {
+        margin: 1px 0 0 0 !important;
+    }
+
+    .ukr label {
+        top:0 !important;
+        padding-left: 0px !important;
+    }
+    .ukr input {
+        margin-left:0px !important;
+    }
+
+    .pib {
+        input {
+            margin: 0 7px 0 0;
+            float: left;
+            width:96px !important;
+        }
+        #midname {
+            margin: 0 !important;
+        }
+        #surname {
+            margin: 0 7px 0 -15px !important;
+        }
+
+    }
+
+    .currency {
+        div {
+            margin: 0 20px 0 0 !important
+        }
+    }
+
+    .i-agree {
+        label {
+            padding-left: 0 !important
+        }
+    }
+
+    input {
+        margin-left:-15px;
+    }
+
+    #code {}
+    #num {}
+
+    .monthly {
+        ins {
+            right:125px !important;
+        }
+    }
+
+
+    .popup {
+        .popup-block {
+            border:1px solid #000;
+
+            ins.close-popup {
+                position: absolute;
+                top:15px;
+            }
+        }
+    }
 }
